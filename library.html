@@ -30,12 +30,12 @@
 
     <div class="library-container">
         <div class="navigation-buttons">
-            <button class="btn" id="home-btn"><a href="index.php">Home</a></button>
+            <button class="btn" id="home-btn"><a href="index.html">Home</a></button>
             <?php if ($logged_in): ?>
                 <span class="user-welcome">Welcome, <?php echo htmlspecialchars($user_name); ?></span>
-                <a href="php/landing-page/logout.php" class="btn auto-width" id="logout-btn">Logout</a>
+                <a href="php/landing-page/logout.html" class="btn auto-width" id="logout-btn">Logout</a>
             <?php else: ?>
-                <button class="btn" id="login-btn"><a href="login-reg.php">Login</a></button>
+                <button class="btn" id="login-btn"><a href="login-reg.html">Login</a></button>
             <?php endif; ?>
         </div>
 
@@ -58,7 +58,7 @@
             <!-- Folders and files will be dynamically added here -->
             <?php if (!$logged_in): ?>
                 <div class="login-required-message">
-                    <p>Please <a href="login-reg.php">log in</a> to view and manage your code library.</p>
+                    <p>Please <a href="login-reg.html">log in</a> to view and manage your code library.</p>
                 </div>
             <?php endif; ?>
         </div>
